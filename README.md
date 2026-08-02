@@ -1,2 +1,2 @@
 # gamezone
-gaming-site
+My gaming gallery website
