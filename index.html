@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 
@@ -5,229 +6,475 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GameZone | گالری گیمینگ</title>
+    <title>GameZone | Gaming Gallery</title>
+
+    <meta name="description"
+          content="GameZone - Gaming, Football and Shooter Gallery">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="header">
+<!-- HEADER -->
 
-        <div class="logo">
-            GAME<span>ZONE</span>
-        </div>
+<header class="header">
 
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#gallery">گالری</a>
-            <a href="#about">درباره سایت</a>
-        </nav>
+    <div class="logo">
+        GAME<span>ZONE</span>
+    </div>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
 
-    </header>
+        <a href="#home">خانه</a>
+        <a href="#galleries">گالری‌ها</a>
+        <a href="#about">درباره</a>
+        <a href="#contact">مدیریت</a>
 
+    </nav>
 
-    <section class="hero" id="home">
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
 
-        <div class="hero-content">
+</header>
 
-            <p class="small-title">WELCOME TO GAMEZONE</p>
 
-            <h1>
-                دنیای بازی‌ها
-                <br>
-                <span>از نگاه گیمرها</span>
-            </h1>
+<!-- HERO / DASHBOARD -->
 
-            <p>
-                بهترین لحظات بازی، نتایج مسابقات و اسکرین‌شات‌های
-                جذاب گیمینگ را اینجا ببین.
-            </p>
+<section class="hero" id="home">
 
-            <a href="#gallery" class="hero-btn">
-                مشاهده گالری
-            </a>
+    <div class="hero-content">
 
-        </div>
+        <span class="eyebrow">
+            GAMEZONE DASHBOARD
+        </span>
 
-    </section>
-
-
-    <section class="gallery-section" id="gallery">
-
-        <div class="section-title">
-
-            <p>GAME GALLERY</p>
-
-            <h2>آخرین تصاویر</h2>
-
-        </div>
-
-
-        <div class="filters">
-
-            <button class="filter active" onclick="filterImages('all', this)">
-                همه
-            </button>
-
-            <button class="filter" onclick="filterImages('football', this)">
-                ⚽ فوتبال
-            </button>
-
-            <button class="filter" onclick="filterImages('shooter', this)">
-                🔫 شوتر
-            </button>
-
-            <button class="filter" onclick="filterImages('gaming', this)">
-                🎮 گیمینگ
-            </button>
-
-        </div>
-
-
-        <div class="gallery">
-
-            <div class="card football">
-
-                <img src="images/football/football1.jpg" alt="نتیجه فوتبال">
-
-                <div class="card-info">
-
-                    <span>⚽ فوتبال</span>
-
-                    <h3>نتیجه مسابقه</h3>
-
-                    <p>Match Result</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="card shooter">
-
-                <img src="images/shooter/shooter1.jpg" alt="بازی شوتر">
-
-                <div class="card-info">
-
-                    <span>🔫 Shooter</span>
-
-                    <h3>لحظه‌ای از میدان نبرد</h3>
-
-                    <p>FPS Gameplay</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="card gaming">
-
-                <img src="images/gaming/gaming1.jpg" alt="تصویر گیمینگ">
-
-                <div class="card-info">
-
-                    <span>🎮 Gaming</span>
-
-                    <h3>Gaming Setup</h3>
-
-                    <p>Gaming Moment</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="card football">
-
-                <img src="images/football/football2.jpg" alt="مسابقه فوتبال">
-
-                <div class="card-info">
-
-                    <span>⚽ فوتبال</span>
-
-                    <h3>لحظه حساس بازی</h3>
-
-                    <p>Football</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="card shooter">
-
-                <img src="images/shooter/shooter2.jpg" alt="FPS">
-
-                <div class="card-info">
-
-                    <span>🔫 Shooter</span>
-
-                    <h3>Battlefield</h3>
-
-                    <p>FPS Gameplay</p>
-
-                </div>
-
-            </div>
-
-
-            <div class="card gaming">
-
-                <img src="images/gaming/gaming2.jpg" alt="Gaming">
-
-                <div class="card-info">
-
-                    <span>🎮 Gaming</span>
-
-                    <h3>Gaming Moment</h3>
-
-                    <p>Game Screenshot</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="about" id="about">
-
-        <div>
-
-            <p class="small-title">ABOUT GAMEZONE</p>
-
-            <h2>جایی برای ثبت لحظات گیمینگ</h2>
-
-            <p>
-                GameZone یک گالری ساده برای نمایش تصاویر بازی،
-                نتایج مسابقات فوتبال و لحظات جذاب بازی‌های مختلف است.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <footer>
-
-        <div class="logo">
-            GAME<span>ZONE</span>
-        </div>
+        <h1>
+            دنیای بازی‌ها
+            <br>
+            <span>در یک گالری</span>
+        </h1>
 
         <p>
-            © 2026 GameZone - All Rights Reserved
+            بهترین لحظات فوتبال، شوتر و بازی‌های مورد علاقه‌ات
+            را در GameZone ببین.
         </p>
 
-    </footer>
+        <div class="hero-buttons">
+
+            <a href="#galleries" class="primary-btn">
+                مشاهده گالری‌ها
+            </a>
+
+            <button class="music-btn" onclick="toggleMusic()">
+
+                <span id="musicIcon">▶</span>
+
+                <span id="musicText">
+                    پخش موزیک
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
 
 
-    <script src="script.js"></script>
+    <div class="dashboard-stats">
+
+        <div class="stat">
+            <strong id="totalImages">0</strong>
+            <span>تصویر</span>
+        </div>
+
+        <div class="stat">
+            <strong id="totalGalleries">3</strong>
+            <span>گالری</span>
+        </div>
+
+        <div class="stat">
+            <strong>50</strong>
+            <span>حداکثر هر گالری</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- SEARCH -->
+
+<section class="search-area">
+
+    <div class="search-box">
+
+        <span>🔎</span>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="جستجو در گالری‌ها..."
+            oninput="searchImages()"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- GALLERIES -->
+
+<section class="section" id="galleries">
+
+    <div class="section-header">
+
+        <span>
+            EXPLORE
+        </span>
+
+        <h2>
+            گالری‌های GameZone
+        </h2>
+
+        <p>
+            یک گالری را انتخاب کن
+        </p>
+
+    </div>
+
+
+    <!-- CATEGORY CARDS -->
+
+    <div class="categories">
+
+        <div
+            class="category football"
+            onclick="openGallery('football')"
+        >
+
+            <div class="category-content">
+
+                <div class="category-icon">
+                    ⚽
+                </div>
+
+                <h3>
+                    Football
+                </h3>
+
+                <p>
+                    نتایج و لحظات فوتبال
+                </p>
+
+                <span id="footballCount">
+                    0 Images
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="category shooter"
+            onclick="openGallery('shooter')"
+        >
+
+            <div class="category-content">
+
+                <div class="category-icon">
+                    🔫
+                </div>
+
+                <h3>
+                    Shooter
+                </h3>
+
+                <p>
+                    لحظات بازی‌های شوتر
+                </p>
+
+                <span id="shooterCount">
+                    0 Images
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="category gaming"
+            onclick="openGallery('gaming')"
+        >
+
+            <div class="category-content">
+
+                <div class="category-icon">
+                    🎮
+                </div>
+
+                <h3>
+                    Gaming
+                </h3>
+
+                <p>
+                    بهترین لحظات گیمینگ
+                </p>
+
+                <span id="gamingCount">
+                    0 Images
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- GALLERY VIEW -->
+
+    <div id="galleryView" class="gallery-view">
+
+        <div class="gallery-top">
+
+            <button
+                class="back-btn"
+                onclick="closeGallery()"
+            >
+                ← برگشت
+            </button>
+
+            <div>
+
+                <span id="gallerySubtitle">
+                    GALLERY
+                </span>
+
+                <h2 id="galleryTitle">
+                    Gallery
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="galleryGrid"
+            class="gallery-grid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="about-box">
+
+        <span>
+            ABOUT GAMEZONE
+        </span>
+
+        <h2>
+            یک گالری ساده،
+            <br>
+            با حال‌وهوای گیمینگ
+        </h2>
+
+        <p>
+            GameZone برای نمایش تصاویر، نتایج مسابقات
+            و لحظات خاص دنیای بازی ساخته شده است.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+    <div class="section-header">
+
+        <span>
+            CONTACT
+        </span>
+
+        <h2>
+            گفتگو با مدیر سایت
+        </h2>
+
+        <p>
+            نظر یا پیشنهاد خودت را ارسال کن.
+        </p>
+
+    </div>
+
+
+    <div class="contact-panel">
+
+        <div class="admin">
+
+            <div class="admin-avatar">
+                GZ
+            </div>
+
+            <h3>
+                GameZone Admin
+            </h3>
+
+            <span class="online">
+                ● Online
+            </span>
+
+        </div>
+
+
+        <form onsubmit="sendMessage(event)">
+
+            <input
+                id="name"
+                type="text"
+                placeholder="نام شما"
+                required
+            >
+
+            <input
+                id="email"
+                type="email"
+                placeholder="ایمیل"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="پیام شما..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                ارسال پیام
+            </button>
+
+            <small id="messageStatus"></small>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="logo">
+        GAME<span>ZONE</span>
+    </div>
+
+    <p>
+        © 2026 GameZone
+    </p>
+
+</footer>
+
+
+
+<!-- MUSIC -->
+
+<audio id="backgroundMusic" loop>
+
+    <source
+        src="music/background.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox">
+
+    <button
+        class="close-lightbox"
+        onclick="closeLightbox()"
+    >
+        ✕
+    </button>
+
+
+    <button
+        class="zoom-out"
+        onclick="zoomOut()"
+    >
+        −
+    </button>
+
+
+    <button
+        class="zoom-in"
+        onclick="zoomIn()"
+    >
+        +
+    </button>
+
+
+    <button
+        class="prev"
+        onclick="previousImage()"
+    >
+        ❮
+    </button>
+
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt=""
+    >
+
+
+    <button
+        class="next"
+        onclick="nextImage()"
+    >
+        ❯
+    </button>
+
+
+    <div class="image-info">
+
+        <span id="imageNumber">
+            1 / 1
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
 
 </body>
 
 </html>
+```
